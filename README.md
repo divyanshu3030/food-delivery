@@ -1,16 +1,84 @@
-# React + Vite
+# 🍔 Food Ordering App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive food ordering web application built using **React.js**, **Redux Toolkit**, and **Tailwind CSS**. Users can browse food items by category, add items to cart, update quantities, remove items, and view the complete order summary.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🍽️ Food items displayed in cards
+* 🔍 Food category filtering
+* 🥗 Veg / Non-Veg food identification
+* 🛒 Add items to cart
+* ➕ Increase item quantity
+* ➖ Decrease item quantity
+* 🗑️ Remove items from cart
+* 💰 Automatic subtotal calculation
+* 🚚 Delivery fee calculation
+* 🧾 Tax calculation
+* 💵 Automatic total calculation
+* 📱 Responsive UI
+* 🔔 Toast notifications
+* ⚡ Redux Toolkit for cart state management
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* Redux Toolkit
+* React Redux
+* Tailwind CSS
+* React Icons
+* React Toastify
+* Vite
 
-## Expanding the Oxlint configuration
+## 📂 Main Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+src/
+├── assets/
+├── components/
+│   ├── Card.jsx
+│   ├── Card2.jsx
+│   └── Nav.jsx
+├── context/
+│   └── UserContext.jsx
+├── redux/
+│   ├── cartSlice.js
+│   └── store.js
+├── Category.js
+├── food.js
+└── pages/
+    └── Home.jsx
+```
+
+## 🛒 Cart Management
+
+Redux Toolkit is used to manage cart data.
+
+Available actions:
+
+* `AddItem`
+* `RemoveItem`
+* `IncrementQty`
+* `DecrementQty`
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## ▶️ Run the Project
+
+```bash
+npm run dev
+```
+
+The application will run on the local development server provided by Vite.
+
+## 💡 Project Highlights
+
+* Category-based food filtering
+* Centralized cart state using Redux
+* Dynamic price and quantity calculations
+* Clean and responsive Tailwind CSS design
+* Component-based React architecture
